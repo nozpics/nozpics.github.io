@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>nozpi — 個人開発アプリ</title>
+<meta name="description" content="nozpi が個人で開発・運営しているアプリの一覧です。">
+<style>
+  :root{
+    --grass:#7CB342; --grass-dark:#5f8f31; --soil:#3E2723;
+    --amber:#FFB300; --ink:#2b2b2b; --muted:#6b6b6b;
+    --card:#ffffff; --bg:#f6f8f3; --line:#e4e8de;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif;
+    line-height:1.8; -webkit-text-size-adjust:100%;
+  }
+  .wrap{max-width:680px; margin:0 auto; padding:0 20px}
+  header{
+    background:linear-gradient(180deg,var(--grass) 0%,var(--grass-dark) 100%);
+    color:#fff; padding:56px 0 48px; text-align:center;
+  }
+  header h1{margin:0 0 8px; font-size:32px; letter-spacing:.04em}
+  header p{margin:0; opacity:.92; font-size:15px}
+  main{padding:40px 0 24px}
+  h2{
+    font-size:15px; letter-spacing:.08em; color:var(--muted);
+    margin:0 0 16px; font-weight:600;
+  }
+  .app{
+    background:var(--card); border:1px solid var(--line); border-radius:16px;
+    padding:24px; display:flex; gap:20px; align-items:flex-start;
+  }
+  .app img{width:88px; height:88px; border-radius:20px; flex:none; display:block}
+  .app-body{flex:1; min-width:0}
+  .app h3{margin:0 0 4px; font-size:20px}
+  .badges{margin:0 0 10px; font-size:12px; color:var(--muted)}
+  .badges span{
+    display:inline-block; border:1px solid var(--line); border-radius:999px;
+    padding:1px 10px; margin-right:6px;
+  }
+  .app p{margin:0 0 16px; font-size:14px; color:#444}
+  .btn{
+    display:inline-block; background:var(--amber); color:var(--soil);
+    text-decoration:none; font-weight:700; font-size:15px;
+    padding:11px 26px; border-radius:999px;
+  }
+  .btn:hover{filter:brightness(1.06)}
+  .links{margin-top:36px}
+  .links ul{list-style:none; margin:0; padding:0}
+  .links li{border-top:1px solid var(--line)}
+  .links li:last-child{border-bottom:1px solid var(--line)}
+  .links a{
+    display:block; padding:15px 4px; text-decoration:none;
+    color:var(--ink); font-size:15px;
+  }
+  .links a:hover{color:var(--grass-dark)}
+  .links a::after{content:"›"; float:right; color:var(--muted)}
+  footer{
+    margin-top:48px; padding:28px 0 40px; border-top:1px solid var(--line);
+    font-size:13px; color:var(--muted); text-align:center;
+  }
+  footer a{color:var(--muted)}
+  @media (max-width:520px){
+    header{padding:44px 0 36px}
+    header h1{font-size:27px}
+    .app{flex-direction:column; align-items:center; text-align:center; gap:16px}
+    .app img{width:96px; height:96px}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <h1>nozpi</h1>
+    <p>個人でアプリを作っています</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <h2>アプリ</h2>
+
+  <div class="app">
+    <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/0b/35/21/0b3521cc-5739-f2ee-d31c-bcc6fba8814f/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg"
+         alt="にげモグのアプリアイコン" width="512" height="512">
+    <div class="app-body">
+      <h3>にげモグ</h3>
+      <p class="badges"><span>iPhone</span><span>無料</span><span>9+</span></p>
+      <p>
+        「モグラたたき」を、モグラ目線で。<br>
+        穴から穴へ逃げまわって、振り下ろされるハンマーをかわし続けるだけの
+        シンプルなアクションゲームです。1プレイ30秒、操作はタップだけ。
+      </p>
+      <a class="btn" href="https://apps.apple.com/jp/app/id6806742617">App Store で見る</a>
+    </div>
+  </div>
+
+  <div class="links">
+    <h2>各種ページ</h2>
+    <ul>
+      <li><a href="https://nozpics.github.io/privacy/nigemogu/">にげモグ プライバシーポリシー</a></li>
+      <li><a href="https://nozpics.github.io/privacy/support/">サポート・お問い合わせ</a></li>
+    </ul>
+  </div>
+
+</main>
+
+<footer class="wrap">
+  <p>
+    お問い合わせ：<a href="mailto:nozpidev@gmail.com">nozpidev@gmail.com</a><br>
+    © 2026 nozpi
+  </p>
+</footer>
+
+</body>
+</html>
